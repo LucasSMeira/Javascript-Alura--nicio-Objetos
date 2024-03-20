@@ -38,15 +38,27 @@ const dadosLivroDois  = `Os dados do livro são :
 console.log(dadosLivroDois);
 
 
-let livroTres = {
+const livroTres = {
     titulo:'As tentativas de se reerguer',
     autor: 'Fax',
     anoPublicacao: 2019,
     genero: 'Biografia',
+    avaliacao: null,
     
 };
-
+console.log(livroTres["avaliacao"]);
 livroTres.idadePublicacao = anoAtual - livroTres.anoPublicacao;
+
+function atualizaAvaliacao(livro, novaAvaliacao) {
+    if (livro.avaliacao === null) {
+        console.log("Atribuindo nova avaliação.");
+        livro.avaliacao = novaAvaliacao;
+    } else {
+        console.log("O livro já possui uma avaliação!");
+    }
+}
+atualizaAvaliacao(livroTres, 10);
+console.log(atualizaAvaliacao);
 
 const dadoslivroTres  = `Os dados do livro são :
     titulo: ${livroTres.titulo},
@@ -54,6 +66,11 @@ const dadoslivroTres  = `Os dados do livro são :
     anoPublicacao: ${livroTres.anoPublicacao},
     genero: ${livroTres.genero},
     idadePublicacao: ${livroTres.idadePublicacao},
+    avaliacao: ${livroTres.avaliacao},
 `
+console.log(dadoslivroTres);
 
-console.log(livroTres["titulo"]);
+atualizaAvaliacao(livroTres, 5);
+console.log(atualizaAvaliacao);
+
+
