@@ -36,3 +36,24 @@ const dadosLivroDois  = `Os dados do livro são :
 `
 
 console.log(dadosLivroDois);
+
+
+let livroTres = {
+    titulo:'As tentativas de se reerguer',
+    autor: 'Fax',
+    anoPublicacao: 2019,
+    genero: 'Biografia',
+    
+};
+
+livroTres.idadePublicacao = anoAtual - livroTres.anoPublicacao;
+
+const dadoslivroTres  = `Os dados do livro são :
+    titulo: ${livroTres.titulo},
+    autor: ${livroTres.autor},
+    anoPublicacao: ${livroTres.anoPublicacao},
+    genero: ${livroTres.genero},
+    idadePublicacao: ${livroTres.idadePublicacao},
+`
+
+console.log(livroTres["titulo"]);
