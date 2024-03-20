@@ -76,4 +76,6 @@ console.log(atualizaAvaliacao);
 livroTres.genero = "Aventura";
 console.log(livroTres["genero"]);
 
+delete livroTres.avaliacao;
+console.log(livroTres);
 
