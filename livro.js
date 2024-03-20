@@ -73,4 +73,7 @@ console.log(dadoslivroTres);
 atualizaAvaliacao(livroTres, 5);
 console.log(atualizaAvaliacao);
 
+livroTres.genero = "Aventura";
+console.log(livroTres["genero"]);
+
 
